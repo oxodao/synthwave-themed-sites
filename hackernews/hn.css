@@ -1,0 +1,80 @@
+/** If you're reading this, it's probably that the theme has failed on you                       **/
+/** Check this repo to find an updated version: https://github.com/oxodao/synthwave-themed-sites **/
+/** I'd love to put them on userstyles but their upload page 404'd on me...                      **/
+
+body {
+    background: #241b2f;
+}
+
+#hnmain {
+    width: 700px;
+    background: #2a2139;
+}
+
+td[bgcolor="#ff6600"] {
+    background: #241b2f;
+    color: #a09ea3;
+}
+
+td[bgcolor="#ff6600"] a, .yclinks a {
+    color: #f4eee4;
+    text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
+}
+
+.sitestr {
+    color: #72f1b8;
+    text-shadow: 0 0 2px #100c0f, 0 0 10px #257c5575, 0 0 35px #21272475;
+}
+
+.morelink:link, .c00 a:link, .reply a:link, td[bgcolor="#ff6600"] font[color="#ffffff"]{
+    color: #fdfdfd;
+    text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
+}
+
+.storylink:link {
+    color: #fff5f6;
+    text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75
+}
+
+.commtext {
+    color: #fff5f6;
+}
+
+/** REGION = COMMENT FORM **/
+form[action="comment"] {
+    text-align: center;    
+}
+
+form[action="comment"] a[href="formatdoc"] {
+    display: block;   
+}
+
+form[action="comment"] br {
+    display: none;
+}
+
+form[action="comment"] textarea, form[action="comment"] input[type="submit"] {
+    background: #262335;
+    color: #fff5f6;
+    border: 1px solid #5e6397;
+}
+
+form[action="comment"] input[type="submit"] {
+    margin-top: 20px;
+}
+/** END REGION = COMMENT FORM **/
+
+/** REGION = GUIDELINES PAGE **/
+td[bgcolor="#fafaf0"] {
+    background: #2a2139;
+}
+
+td[bgcolor="#fafaf0"] b, td[bgcolor="#fafaf0"] a {
+    color: #f4eee4;
+    text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
+}
+
+td[bgcolor="#fafaf0"] {
+    color: #fff5f6;
+}
+/** END REGION = GUIDELINES PAGE **/

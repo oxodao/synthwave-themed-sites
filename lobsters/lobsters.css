@@ -1,0 +1,52 @@
+body {
+    background: #241b2f;
+}
+
+#wrapper {
+    width: 700px;
+}
+
+#header a, #header a.cur_url, div#footer a {
+    color: #f4eee4;
+    text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
+}
+
+#inside {
+    background: #2a2139;
+}
+
+.u-url {
+    color: #fff5f6;
+    text-shadow: 0 0 2px #000, 0 0 10px #fc1f2c75, 0 0 5px #fc1f2c75, 0 0 25px #fc1f2c75
+}
+
+li a.domain {
+    color: #72f1b8;
+    text-shadow: 0 0 2px #100c0f, 0 0 10px #257c5575, 0 0 35px #21272475;
+}
+
+div.morelink a {
+    color: #fdfdfd;
+    text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975; 
+}
+
+/** Comment section **/
+#edit_comment_ {
+    text-align: center;
+    margin-right: 40px;
+}
+
+#edit_comment_ textarea, #edit_comment_ button, #edit_comment_ input[type="submit"] {
+    background: #262335;
+    color: #fff5f6;
+    border: 1px solid #5e6397;
+}
+
+.story_text, .comment_text {
+    color: #fff5f6;
+}
+
+.story_text a, .comment_text a {
+    color: #fdfdfd;
+    text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975; 
+}
