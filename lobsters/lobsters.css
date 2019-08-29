@@ -50,3 +50,46 @@ div.morelink a {
     color: #fdfdfd;
     text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975; 
 }
+
+@media only screen and (max-width: 480px) {
+    div#header, div#leader {
+        background: #241b2f;
+        border-bottom: 1px solid #14121c;
+    }
+
+    ol.stories.list li.story div.story_liner {
+        background: #2a2139;
+    }
+
+    ol.stories.list li.story {
+        border-bottom: 1px solid #14121c;
+    }
+
+    ol.stories.list li.story .mobile_comments {
+        background: #241b2f;
+    }
+
+    ol.stories.list li.story .mobile_comments span {
+        background-color: #463465;
+        border: 1px solid #463465;
+
+        color: #fdfdfd;
+        text-shadow: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975; 
+    }
+
+    ol.stories.list li.story .mobile_comments.zero span {
+        background-color: #382950;
+        border: 1px solid #382950;
+
+        color: #c9c9c9;
+        text-shadow: none;
+    }
+
+    ol.stories.list li.story .mobile_comments span::before, ol.stories.list li.story .mobile_comments span::after {
+        border-color: #463465;
+    }
+
+    ol.stories.list li.story .mobile_comments.zero span::before, ol.stories.list li.story .mobile_comments.zero span::after {
+        border-color: #382950;
+    }
+}
