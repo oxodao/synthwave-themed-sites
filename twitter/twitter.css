@@ -1,0 +1,215 @@
+:root {
+    /** These names refers to what they are in VSCode **/
+    --color-bg-editor: #2a2139;
+    --color-fg-editor: #bbbbbb;
+    
+    --color-fg-editor-comment: #6d77b3;
+    
+    --color-bg-editor-tooltabs: #171520;
+    --color-bg-editor-filelist: #241b2f;
+    
+    --color-text-yellow: #f4eee4 !important;
+    --color-shadow-yellow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
+    
+    --color-text-green: #72f1b8;
+    --color-shadow-green: 0 0 2px #100c0f, 0 0 10px #257c5575, 0 0 35px #21272475;
+    
+    --color-text-blue: #fdfdfd !important;
+    --color-shadow-blue: 0 0 2px #001716, 0 0 3px #03edf975, 0 0 5px #03edf975, 0 0 8px #03edf975;
+}
+
+/*** Main stuff ***/
+body {
+    background-color: var(--color-bg-editor);
+    color: var(--color-fg-editor);
+}
+
+div.global-nav-inner {
+    background-color: var(--color-bg-editor-tooltabs); 
+}
+
+.stream-item:not(.no-header-background-module) {
+    border-color: var(--color-bg-editor-tooltabs);
+}
+
+.btn-link {
+    color: var(--color-text-blue) !important;
+    text-shadow: var(--color-shadow-blue);
+}
+
+.secondary-nav {
+    color: var(--color-fg-editor)!important;
+}
+
+.EdgeButton--invertedPrimary, .EdgeButton--secondary {
+    background-color: var(--color-bg-editor-tooltabs);
+    border-color: var(--color-fg-editor-comment);
+    color: var(--color-fg-editor-comment) !important;
+}
+
+.EdgeButton--invertedPrimary:hover {
+    background-color: var(--color-fg-editor-comment);
+    border-color: var(--color-bg-editor-tooltabs);
+    color: var(--color-bg-editor-tooltabs) !important;
+}
+
+.EdgeButton--secondary:hover {
+    background-color: var(--color-bg-editor-filelist) !important;
+}
+
+.EdgeButton--primary {
+    background-color: var(--color-fg-editor-comment);
+    border-color: var(--color-bg-editor-tooltabs);
+    color: var(--color-bg-editor-tooltabs) !important;
+}
+
+.EdgeButton--primary:hover {
+    background-color: var(--color-bg-editor-tooltabs);
+    border-color: var(--color-bg-editor);
+    color: var(--color-fg-editor-comment) !important;
+}
+
+/*** Search bar ***/
+.text-input, .search-input {
+    background-color: var(--color-bg-editor-filelist) !important;
+    border-color: var(--color-bg-editor) !important;
+    color: var(--color-text-green)!important;
+    text-shadow: var(--color-shadow-green)!important;
+}
+
+.dropdown-menu.typeahead {
+    background-color: var(--color-bg-editor-filelist) !important;   
+}
+
+.dropdown-menu .typeahead-items li > a, .dropdown-menu .typeahead-items li > a > span:not([class*="typeahead-user-item-info"]) * {
+    color: var(--color-text-blue)!important;
+    text-shadow: var(--color-shadow-blue)!important;
+}
+
+.dropdown-menu .typeahead-items li > a:focus, .dropdown-menu .typeahead-items li > a:hover {
+    background-color: var(--color-bg-editor) !important;
+}
+
+/*** Tweets ***/
+.tweet, .stream-loading, .stream-end, .stream-end-inner{
+    background-color: #262335;
+    border-color: var(--color-bg-editor-tooltabs);
+}
+
+.tweet:hover {
+    background-color: #2e2442;
+}
+
+.TwitterCard-container {
+    border-color: var(--color-bg-editor-tooltabs);
+}
+
+.TwitterCard-container:hover {
+    border-color: var(--color-bg-editor-tooltabs);
+    background-color: var(--color-bg-editor-filelist);
+}
+
+a.twitter-hashtag, a.twitter-timeline-link, a.twitter-atreply {
+    color: var(--color-text-blue) !important;
+    text-shadow: var(--color-shadow-blue);
+}
+
+a.twitter-hashtag *, a.twitter-timeline-link *, a.twitter-atreply * {
+    color: inherit;
+}
+
+/* In-tweet username */ .fullname, .fullname:hover {
+    color: var(--color-text-yellow) !important;
+    text-shadow: var(--color-shadow-yellow);
+}
+
+/** In-tweet infos **/ .username, .username *, .time *, .js-retweet-text, .js-retweet-text *, .Icon--small, .js-pinned-text{
+    color: var(--color-fg-editor-comment) !important;
+}
+
+/*** Profile ***/
+
+/* Profile navbar (Where it lists amt of follows, following, ...) = */ .ProfileCanopy-navBar,
+/* Follow button = */ .ProfileNav-item--userActions {
+    background-color: var(--color-bg-editor-filelist);
+}
+
+/* Profile navbar text color */
+.ProfileNav-stat {
+    color: var(--color-text-green) !important;
+    text-shadow: var(--color-shadow-green);
+}
+
+.u-borderUserColor {
+    border-color: var(--color-text-green) !important;
+}
+
+/* Profile bio */
+.ProfileHeaderCard-bio {
+    color: var(--color-fg-editor);
+}
+
+/* Profile tabs (Tweets, tweets & answers, medias)*/
+.ProfileHeading-content {
+    background-color: var(--color-bg-editor-tooltabs); 
+    border-color: var(--color-bg-editor-tooltabs);
+}
+
+.ProfileHeading-content .is-active, .ProfileHeading-content .is-active:hover {
+    color: var(--color-text-green);
+    text-shadow: var(--color-shadow-green);
+}
+
+.ProfileHeaderCard-urlText a, .PhotoRail-headingWithCount, .PhotoRail-headingWithoutCount {
+    color: var(--color-text-blue) !important;
+    text-shadow: var(--color-shadow-blue);   
+}
+
+/* Profile username */  a.ProfileHeaderCard-nameLink {
+    color: var(--color-text-yellow) !important;
+    text-shadow: var(--color-shadow-yellow);
+}
+
+/*** Side bar (TT, register thing when you are not logged in, ...) ***/
+.SidebarCommonModules > div {
+    background-color: #262335 !important;
+}
+
+.SidebarCommonModules .module {
+    border-color: var(--color-bg-editor-tooltabs);
+}
+
+.trend-item a .trend-name {
+    color: var(--color-text-blue);
+    text-shadow: var(--color-shadow-blue);
+}
+
+/** Titles **/
+/* Register thing */            .SignupCallOut-title,
+/* You might like card title */ .RelatedUsers-title,
+/* Text TT */                   .trend-location,
+/* Related user names */        .RelatedUsers-users .fullname {
+    color: var(--color-text-yellow);
+    text-shadow: var(--color-shadow-yellow);   
+}
+
+/*** Useless stuff (For completeness sake) ***/
+
+#signin-dropdown {
+    background-color: var(--color-bg-editor);
+    color: var(--color-fg-editor);
+}
+
+#signin-dropdown .LoginForm-rememberForgot span {
+    color: var(--color-fg-editor-comment) !important;
+}
+
+#signin-dropdown .forgot {
+    color: var(--color-text-blue) !important;
+    text-shadow: var(--color-shadow-blue) !important;
+}
+
+
+.eu-cookie-notice {
+    background-color: var(--color-bg-editor);
+}
