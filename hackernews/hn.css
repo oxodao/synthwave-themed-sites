@@ -16,8 +16,8 @@ td[bgcolor="#ff6600"] {
     color: #a09ea3;
 }
 
-td[bgcolor="#ff6600"] a, .yclinks a {
-    color: #f4eee4;
+td[bgcolor="#ff6600"] a, .yclinks a, .titlelink {
+    color: #f4eee4 !important;
     text-shadow: 0 0 2px #393a33, 0 0 8px #f39f0575, 0 0 2px #f39f0575;
 }
 
@@ -78,3 +78,4 @@ td[bgcolor="#fafaf0"] {
     color: #fff5f6;
 }
 /** END REGION = GUIDELINES PAGE **/
+
